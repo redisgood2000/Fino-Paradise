@@ -1,0 +1,34 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Firebase and secrets
+.env
+.env.*
+!.env.example
+**/service-account*.json
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Node
+node_modules/
+dist/
+coverage/
+npm-debug.log*
+yarn-debug.log*
