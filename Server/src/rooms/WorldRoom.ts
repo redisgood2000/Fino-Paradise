@@ -103,11 +103,11 @@ export class WorldRoom extends Room {
   }
 
   onJoin(client: Client, options: JoinOptions, auth: { uid: string; displayName: string }) {
-    this.state.players.set(client.sessionId, new Player({
-      uid: auth.uid,
-      displayName: auth.displayName,
-      avatarId: clean(options.avatarId || "avatar-default", 64),
-    }));
+    const player = new Player();
+    player.uid = auth.uid;
+    player.displayName = auth.displayName;
+    player.avatarId = clean(options.avatarId || "avatar-default", 64);
+    this.state.players.set(client.sessionId, player);
     this.inputs.set(client.sessionId, { x: 0, y: 0 });
     this.broadcast("presence", { event: "joined", uid: auth.uid, displayName: auth.displayName });
   }
