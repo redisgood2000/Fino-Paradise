@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "com.colyseus.sdk": "https://github.com/colyseus/colyseus-unity-sdk.git#upm",
-    "com.unity.2d.tilemap": "1.0.0",
+    "io.colyseus.sdk": "https://github.com/colyseus/colyseus-unity-sdk.git#upm",
     "com.unity.textmeshpro": "3.0.9"
   }
 }
